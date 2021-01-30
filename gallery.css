@@ -1,0 +1,43 @@
+* {
+    transform: preserve-3d;
+    margin: 0;
+    padding: 0;
+}
+
+.glry_container{
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+    
+}
+
+.glry_image{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+.glry_image:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width: 7684px){
+    .glry_container{
+        column-count: 3;
+    }
+}
+
+@media (max-width: 425px){
+    .glry_container{
+        column-count: 2;
+    }
+}
+
+@media (max-width: 375px){
+    .glry_container{
+        column-count: 1;
+    }
+}
